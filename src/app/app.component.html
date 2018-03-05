@@ -1,20 +1,27 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<div class="profileComponent">
+  <img class="avatar" [src]="profile.avatar" />
+  <h1 class="nameTag">{{profile.displayName}}</h1>
+  <div *ngIf="profile.platform.id == 1">
+    <img class="platformIcon" src="assets/steam_small.png" />
+  </div>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
 
+<div class="statsComponent">
+  <h2>Stats</h2>
+  <hr>
+  <p>Wins: {{profile.stats.wins}}</p>
+  <p>Goals: {{profile.stats.goals}}</p>
+  <p>Mvps: {{profile.stats.mvps}}</p>
+  <p>Saves: {{profile.stats.saves}}</p>
+  <p>Shots: {{profile.stats.shots}}</p>
+  <p>Assists: {{profile.stats.assists}}</p>
+</div>
+
+<div class="ranksComponent">
+  <h2>Ranks</h2>
+  <hr>
+  <p>Solo Duel: {{profile.rankedSeasons[7][10].tier}}</p>
+  <p>Doubles: {{profile.rankedSeasons[7][11].tier}}</p>
+  <p>Solo Standard: {{profile.rankedSeasons[7][12].tier}}</p>
+  <p>Standard: {{profile.rankedSeasons[7][13].tier}}</p>
+  </div>

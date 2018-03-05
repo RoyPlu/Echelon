@@ -1,0 +1,37 @@
+.profileComponent {
+    background-color: lightgrey;
+    padding: 5px;
+    margin: 5px;
+    width: auto;
+    border-radius: 5px;
+    vertical-align: middle;
+    float: left;
+    text-align: center;
+}
+
+.platformIcon {
+    margin: 0 auto;
+    width: 30px;
+    display: inline-block;
+}
+
+.avatar {
+    margin: 0 auto;
+    clear: both;
+    border-radius: 5px;
+}
+
+.nameTag {
+    margin: 0 auto;
+}
+
+.statsComponent {
+    display: inline-block;
+    background-color: lightgrey;
+    padding: 5px;
+    margin: 5px;
+    width: auto;
+    border-radius: 5px;
+    vertical-align: middle;
+    text-align: center;
+}

@@ -1,9 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { Http, HttpModule, Headers, RequestOptions } from '@angular/http';
+import { FormsModule } from '@angular/forms';
 
 import { NgxElectronModule } from 'ngx-electron';
 
 import { AppComponent } from './app.component';
+import { RLSService } from './services/RLS.service';
 
 
 @NgModule({
@@ -12,9 +15,10 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     NgxElectronModule
   ],
-  providers: [],
+  providers: [RLSService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
