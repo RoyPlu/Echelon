@@ -1,4 +1,20 @@
-# RocketLeagueStatsElectron
+<h1 align="center">
+  <br>
+  <img src="https://i.imgur.com/MWTTDtN.png" alt="Echelon" width="200">
+  <br>
+  Echelon
+  <br>
+</h1>
+
+An Angular-based Rocket League stats viewer in Electron.
+
+# Electron commands
+
+## run Electron
+
+Run `npm run electron` to run the electron application
+
+# Default Angular commands
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.6.
 
